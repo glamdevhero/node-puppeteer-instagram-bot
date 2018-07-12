@@ -1,0 +1,16 @@
+{
+  "name": "insta-node-bot",
+  "version": "1.0.0",
+  "description": "Instagram bot with Node.js and Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nicolas Lierman",
+  "license": "ISC",
+  "dependencies": {
+    "pouchdb": "^7.0.0",
+    "puppeteer": "^1.5.0",
+    "shuffle-array": "^1.0.1"
+  }
+}
