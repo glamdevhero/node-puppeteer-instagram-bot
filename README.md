@@ -11,7 +11,7 @@ It uses [PouchDB](https://pouchdb.com/) as a local database to keep track of the
 * Run *node index.js*.
 
 ## In depth guide
-A complete guide on how the bot works is available here.
+A complete guide on how the bot works is [available here](https://glamdevhero.com/2018/07/12/how-to-create-instagram-bot-node-puppeteer/).
 
 ## Additional info
 * This bot does not support two-factor authentication.
