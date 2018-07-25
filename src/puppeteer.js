@@ -122,6 +122,8 @@ let run = async function () {
             if (followStatus === 'Following') {
                 console.log('---> unfollow ' + user);
                 await page.click(cnf.selectors.user_unfollow_button);
+                await page.waitFor(750);
+                await page.click(cnf.selectors.user_unfollow_confirm_button);
                 ops.unFollow(user);
                 await page.waitFor(15000 + Math.floor(Math.random() * 5000));
             } else {

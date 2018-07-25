@@ -24,6 +24,7 @@
     "post_like_button": "span.fr66n > button",
     "post_follow_button": "span.oW_lN._1OSdk > button",
     "post_close_button": "button.ckWGn",
-    "user_unfollow_button": "span > button"
+    "user_unfollow_button": "span > button",
+    "user_unfollow_confirm_button": "div.mt3GC > button.aOOlW.-Cab_"
   }
 }
