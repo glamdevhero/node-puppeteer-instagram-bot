@@ -84,7 +84,7 @@ let run = async function () {
                         console.log('---> follow for ' + username);
                         return page.waitFor(10000 + Math.floor(Math.random() * 5000));
                     }).catch(() => {
-                        console.log('---> Allready following ' + username);
+                        console.log('---> Already following ' + username);
                     });
                 }
 
