@@ -45,7 +45,7 @@ let run = async function () {
 
                 //Try to select post, wait, if successful continue
                 let br = false;
-                await page.click('div:nth-child(4) > div > div:nth-child(' + r + ') > div:nth-child(' + c + ') > a').catch(() => {
+                await page.click('section > main > article > div:nth-child(3) > div > div:nth-child(' + r + ') > div:nth-child(' + c +') > a').catch(() => {
                     br = true;
                 });
                 await page.waitFor(2250 + Math.floor(Math.random() * 250));
