@@ -18,8 +18,6 @@ let run = async function () {
     // Load Instagram
     await page.goto('https://www.instagram.com');
     await page.waitFor(2500);
-    await page.click(cnf.selectors.home_to_login_button);
-    await page.waitFor(2500);
 
     // Login
     await page.click(cnf.selectors.username_field);
@@ -45,14 +43,11 @@ let run = async function () {
 
                 //Try to select post, wait, if successful continue
                 let br = false;
-                await page.click('section > main > article > div:nth-child(3) > div > div:nth-child(' + r + ') > div:nth-child(' + c +') > a').catch(() => {
+                await page.click(`section > main > article > div > div > div > div:nth-child(${r}) > div:nth-child(${c})`).catch(() => {
                     br = true;
                 });
                 await page.waitFor(2250 + Math.floor(Math.random() * 250));
                 if (br) continue;
-
-                // Get post info
-                let hasEmptyHeart = await page.$(cnf.selectors.post_heart_grey);
 
                 let username = await page.evaluate(x => {
                     let element = document.querySelector(x);
@@ -64,10 +59,10 @@ let run = async function () {
                     return Promise.resolve(element ? element.innerHTML : '');
                 }, cnf.selectors.post_follow_link);
 
-                console.log('---> Evaluate post from ' + username);
+                console.log('---> Evaluate post from ' + username + ', followStatus: ' + 1);
 
                 // Decide to like post
-                if (hasEmptyHeart !== null && Math.random() < cnf.settings.like_ratio) {
+                if (Math.random() < cnf.settings.like_ratio) {
                     await page.click(cnf.selectors.post_like_button);
                     console.log('---> like for ' + username);
                     await page.waitFor(10000 + Math.floor(Math.random() * 5000));
