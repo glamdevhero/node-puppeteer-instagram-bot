@@ -7,24 +7,23 @@
   ],
   "settings": {
     "run_every_x_hours": 1,
-    "like_ratio": 0.75,
+    "like_ratio": 0.5,
     "follow_ratio": 0.25,
     "do_unfollows": true,
     "unfollow_after_days": 2,
-    "headless": true
+    "headless": false
   },
   "selectors": {
-    "home_to_login_button": ".izU2O a",
     "username_field": "input[type=\"text\"]",
     "password_field": "input[type=\"password\"]",
-    "login_button": ".L3NKy",
-    "post_heart_grey": "span.glyphsSpriteHeart__outline__24__grey_9",
-    "post_username": "div.e1e1d > h2 > a",
-    "post_follow_link": "div.bY2yH > button",
-    "post_like_button": "span.fr66n > button",
+    "login_button": "._acap",
+    "post_username": "body > div.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div.xb88tzc.xw2csxc.x1odjw0f.x5fp0pe.x1qjc9v5.xjbqb8w.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.xr1yuqi.xkrivgy.x4ii5y1.x1gryazu.x15h9jz8.x47corl.xh8yej3.xir0mxb.x1juhsu6 > div > article > div > div._ae65 > div > div > div._aasi > div > header > div._aaqy._aaqz > div._aar0._ad95._aar1 > div.x78zum5 > div > div > span > span > div > a",
+    "post_follow_link": "article:nth-child(1) > div > div:nth-child(2) > div > div > div > div:nth-child(1) > header > div:nth-child(2) > div > div:nth-child(2) > button > div > div",
+    "post_like_button": "article:nth-child(1) > div > div:nth-child(2) > div > div > div:nth-child(2) > section > span",
     "post_follow_button": "span.oW_lN._1OSdk > button",
-    "post_close_button": "button.ckWGn",
-    "user_unfollow_button": "span > button",
-    "user_unfollow_confirm_button": "div.mt3GC > button.aOOlW.-Cab_"
+    "post_close_button": "body > div.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x160vmok.x10l6tqk.x1eu8d0j.x1vjfegm",
+    "user_follow_button": "main > div > header > section > div > div > div > div > button > div > div",
+    "user_unfollow_button": "main > div > header > section > div > div > div > div > button > div > div",
+    "user_unfollow_confirm_button": "[role=\"dialog\"] > div > div > div > div > div > div:nth-child(8)"
   }
 }
